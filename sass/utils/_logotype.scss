@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: $title-color;
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.logo--web {
+  color: $booton-color;
+}
+.logo--footer {
+  display: inline-block;
+  color: white;
+  padding: 0;
+  margin: 0;
+}

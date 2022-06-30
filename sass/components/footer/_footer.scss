@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  background-color: $footer-header-backgraund;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.footer__addres {
+  margin: 0;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  &--p {
+    padding-top: 20px;
+  }
+}
+
+.footer__contacts {
+  margin-top: 9px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 250ms $timing-fuction;
+  &--phone {
+    margin: 0;
+    margin-bottom: 60px;
+  }
+  &:hover,
+  &:focus {
+    color: $booton-color;
+  }
+}
+.footer__subtitle {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

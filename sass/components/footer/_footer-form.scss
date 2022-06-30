@@ -1,0 +1,20 @@
+.footer__form {
+  // margin-left: auto;
+  // margin-right: auto;
+  padding: 0;
+  border: 0;
+  & input {
+    width: 100%;
+    padding-left: 15px;
+  }
+}
+.footer__input {
+  margin-bottom: 20px;
+  width: 50%;
+  background: #2f303a;
+  border: 0;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}

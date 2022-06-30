@@ -1,0 +1,29 @@
+@import "./utils/vars";
+@import "./base/modern-normalise.scss";
+@import "./base/container";
+@import "./base/section.scss";
+@import "./base/body-ul.scss";
+@import "./components/titles.scss";
+
+@import "./utils/logotype";
+@import "./components/page-header/header-nav.scss";
+@import "./components/buttons";
+@import "./components/sections/hero";
+// modal
+@import "./components/modal/backdrop";
+@import "./components/modal/modal-centr.scss";
+@import "./components/modal/form.scss";
+// SECTIONS
+@import "./components/sections/speciality.scss";
+@import "./components/sections/we-doing.scss";
+@import "./components/sections/team";
+@import "./components/sections/clients.scss";
+// FOOTER
+@import "./components/footer/footer.scss";
+@import "./components/footer/footer-form.scss";
+
+// PORTFOLIO
+@import "./components/sections/portfolio.scss";
+
+// SOCIALS
+@import "./utils/socials.scss";

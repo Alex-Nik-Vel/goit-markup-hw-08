@@ -1,0 +1,41 @@
+// .specialty {
+//   display: flex;
+//   justify-content: center;
+// }
+.specialty__item {
+  padding: 0;
+  min-width: 270px;
+  &::before {
+    // margin-bottom: 30px;
+    display: block;
+    content: " ";
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+  // & + & {
+  //   margin-left: 30px;
+  // }
+}
+
+$iconsvg: "Groupantena", "clock", "diagram", "astronaut";
+@mixin generateIcons($iconlist) {
+  @each $specialty in $iconlist {
+    .#{$specialty}::before {
+      background-image: url("../svg/Icon/#{$specialty}.svg");
+    }
+  }
+}
+@include generateIcons($iconsvg);
+
+.specialty__desc {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 14px;
+  line-height: 1.71;
+}
