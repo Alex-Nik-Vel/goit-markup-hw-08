@@ -65,34 +65,7 @@
 }
 
 /* button porfolio */
-.btn-portfolio {
-  // display: flex;
-  // justify-content: center;
-  margin-top: 0;
-  margin-bottom: 50px;
-  &__items + &__items {
-    margin-left: 8px;
-  }
-}
 
-.button-portfolio {
-  padding: 6px 22px;
-  font-family: inherit;
-  background-color: #f5f4fa;
-  color: rgba(33, 33, 33, 1);
-  font-weight: 500;
-  line-height: 1.6;
-  transition: background-color 250ms $timing-fuction,
-    color 250ms $timing-fuction, box-shadow 250ms $timing-fuction;
-  &:hover,
-  &:focus {
-    background-color: $booton-color;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-}
 // button footer
 .button-mailing {
   display: flex;
