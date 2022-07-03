@@ -263,8 +263,8 @@ summary {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .section--team {
   background-color: #f5f4fa;
@@ -321,10 +321,9 @@ p {
   line-height: 1.17;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .title--card {
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -713,7 +712,12 @@ p {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.card__desk {
+  margin-top: 30px;
+}
+
 .card__specialization {
+  padding-top: 10px;
   font-size: 14px;
   line-height: 1.19;
   text-align: center;
@@ -738,9 +742,6 @@ p {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #2f303a;
   color: white;
   padding-top: 60px;
@@ -887,11 +888,14 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
-}
-.socials:nth-child(n+2) {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-top: 16px;
+  padding-bottom: 24px;
 }
 
 .socials__link {
@@ -904,7 +908,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
   width: 44px;
   height: 44px;
   color: rgb(175, 177, 184);
@@ -930,6 +933,19 @@ p {
 }
 
 /* footer socials */
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 206px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .socials--footer {
   display: -webkit-box;
   display: -ms-flexbox;
