@@ -1,21 +1,22 @@
 .doing__item {
+  display: none;
   position: relative;
   overflow: hidden;
-  // margin: 0;
-  // & + & {
-  //   margin-left: 30px;
-  // }
+  margin: 0;
+  & + & {
+    margin-left: 30px;
+  }
 }
-// .doing__img {
-//   display: block;
-//   max-width: 100%;
-//   height: auto;
-// }
+.doing__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .doing__desc {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 0;
   right: 0;
