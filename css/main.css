@@ -263,8 +263,8 @@ summary {
 }
 
 .section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .section--team {
   background-color: #f5f4fa;
@@ -710,6 +710,7 @@ p {
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 }
 
 .card__desk {
