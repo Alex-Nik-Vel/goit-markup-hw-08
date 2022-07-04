@@ -367,6 +367,66 @@ p {
 
 .header {
   outline: solid #ececec 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-contacts__mailphone, .nav-site__link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-site__link:hover, .nav-site__link:focus {
+  color: #2196f3;
+}
+.nav-site__link.current {
+  color: #2196f3;
+}
+.nav-site__link.current::after, .nav-site__link:hover::after {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  content: " ";
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
+.nav-contacts {
+  margin-left: auto;
+  fill: #757575;
+}
+
+.nav-contacts__mailphone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #757575;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-contacts__icon {
+  padding: 0;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-contacts__mailphone:hover, .nav-contacts__icon:hover,
+.nav-contacts__mailphone:focus,
+.nav-contacts__icon:focus {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .button {
@@ -878,6 +938,25 @@ p {
   border-radius: 4px;
 }
 
+.portfolio {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 40px;
+}
+
+.btn-portfolio {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.btn-portfolio__items:nth-child(-n+3) {
+  margin-bottom: 15px;
+}
+
 .button-portfolio {
   padding: 6px 22px;
   font-family: inherit;
@@ -890,6 +969,9 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.button-portfolio:nth-child(3n+1) {
+  margin-right: 8px;
+}
 .button-portfolio:hover, .button-portfolio:focus {
   background-color: #2196f3;
   color: white;
@@ -899,10 +981,14 @@ p {
 }
 
 .portfolio__item {
+  margin-bottom: 30px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__item:last-child {
+  margin-bottom: 0;
 }
 .portfolio__item:hover, .portfolio__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
