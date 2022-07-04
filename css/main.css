@@ -311,10 +311,12 @@ p {
   top: 280px;
 }
 .title--specialty {
+  padding-top: 30px;
   padding-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 .title--do, .title--teams, .title--client {
   font-size: 36px;
@@ -650,6 +652,14 @@ p {
   color: #2196f3;
 }
 
+.section--specialty {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.specialty__item {
+  margin-bottom: 30px;
+}
 .specialty__item::before {
   display: block;
   content: " ";

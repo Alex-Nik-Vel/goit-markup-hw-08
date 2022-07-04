@@ -1,4 +1,9 @@
+.section--specialty {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .specialty__item {
+  margin-bottom: 30px;
   &::before {
     display: block;
     content: " ";
