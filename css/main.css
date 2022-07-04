@@ -301,14 +301,15 @@ p {
 .title--hero {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  left: 452px;
-  top: 280px;
+  left: 60px;
+  top: 178px;
 }
 .title--specialty {
   padding-top: 30px;
@@ -457,6 +458,8 @@ p {
 }
 
 .section-hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/hero-fon.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-fon.jpg);
   background-repeat: no-repeat;
