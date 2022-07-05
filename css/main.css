@@ -262,9 +262,46 @@ summary {
   display: list-item;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+  }
+  .container .element {
+    -ms-flex-preferred-size: 33.333%;
+        flex-basis: 33.333%;
+  }
+  .container .element--footer, .container .element--header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.section--do {
+  display: none;
 }
 .section--team {
   background-color: #f5f4fa;
@@ -285,6 +322,30 @@ body {
   margin: 0;
 }
 
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: #212121;
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo--web {
+  color: #2196f3;
+}
+
+.logo--footer {
+  display: inline-block;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -299,8 +360,8 @@ p {
   color: #212121;
 }
 .title--hero {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
@@ -341,34 +402,8 @@ p {
   letter-spacing: 0.06em;
 }
 
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  color: #212121;
-  font-family: "Raleway";
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
-}
-
-.logo--web {
-  color: #2196f3;
-}
-
-.logo--footer {
-  display: inline-block;
-  color: white;
-  padding: 0;
-  margin: 0;
-}
-
 .header {
   outline: solid #ececec 1px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .nav-contacts__mailphone, .nav-site__link {
@@ -715,11 +750,6 @@ p {
   color: #2196f3;
 }
 
-.section--specialty {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .specialty__item {
   margin-bottom: 30px;
 }
@@ -758,7 +788,6 @@ p {
 }
 
 .doing__item {
-  display: none;
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -818,7 +847,7 @@ p {
 }
 
 .client {
-  margin: 0 15px;
+  margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -939,14 +968,10 @@ p {
 }
 
 .portfolio {
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 40px;
 }
 
 .btn-portfolio {
-  padding-left: 15px;
-  padding-right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

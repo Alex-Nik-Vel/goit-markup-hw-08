@@ -12,8 +12,8 @@ p {
 .title {
   color: $title-color;
   &--hero {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: calc(12.5%);
+    margin-right: calc(12.5%);
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 26px;
@@ -32,6 +32,9 @@ p {
     text-transform: uppercase;
     text-align: center;
   }
+  // &--do {
+  //   display: none;
+  // }
   &--do,
   &--teams,
   &--client {
@@ -41,6 +44,7 @@ p {
     margin-top: 0;
     margin-bottom: 30px;
   }
+
   &--card {
     font-weight: 500;
     font-size: 16px;
