@@ -503,6 +503,17 @@ p {
   outline: none;
 }
 
+.button-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border: none;
+  z-index: 0;
+}
+
 .button-hero {
   height: 50px;
   min-width: 200px;
