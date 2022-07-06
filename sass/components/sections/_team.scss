@@ -14,9 +14,9 @@
   margin-bottom: 30px;
   @media screen and (min-width: $tables) and (max-width: $desktop) {
     margin-right: 30px;
-    // &:nth-child(2n) {
-    //   margin-right: 0;
-    // }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
   @media screen and (min-width: $desktop) {
     margin-right: 30px;
