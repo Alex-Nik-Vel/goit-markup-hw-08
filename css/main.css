@@ -306,6 +306,9 @@ summary {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.section--do {
+  padding-bottom: 60px;
+}
 @media screen and (max-width: 1200px) {
   .section--do {
     display: none;
@@ -846,6 +849,17 @@ p {
   border: 0;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.doing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .doing__item {
