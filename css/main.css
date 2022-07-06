@@ -271,16 +271,22 @@ summary {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     min-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container .element {
     -ms-flex-preferred-size: 33.333%;
@@ -373,12 +379,17 @@ p {
   top: 178px;
 }
 .title--specialty {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .title--specialty {
+    text-align: left;
+  }
 }
 .title--do, .title--teams, .title--client {
   font-size: 36px;
@@ -423,7 +434,6 @@ p {
   color: #2196f3;
 }
 .nav-site__link.current::after, .nav-site__link:hover::after {
-  position: absolute;
   display: block;
   bottom: 0;
   content: " ";
@@ -448,6 +458,7 @@ p {
 }
 
 .nav-contacts__icon {
+  position: relative;
   padding: 0;
   margin-right: 10px;
   width: 16px;
@@ -610,20 +621,32 @@ p {
 
 /* modal form */
 .form {
+  margin-left: auto;
+  margin-right: auto;
   padding: 40px;
-  width: 528px;
   outline: none;
 }
 
 .form__field,
 .check {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
 .form__caption {
+  margin-top: 0;
+  margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -631,7 +654,12 @@ p {
 }
 
 .form__label {
+  margin: 0;
   padding: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form__label--bottom {
@@ -639,8 +667,11 @@ p {
 }
 
 .form__input {
+  margin: 0;
+  position: relative;
   height: 40px;
   width: 100%;
+  margin-bottom: 10px;
   padding: 11px 15px 11px 42px;
   font-size: 14px;
   background: #ffffff;
@@ -750,8 +781,27 @@ p {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .specialty {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .specialty__item {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .specialty__item {
+    width: 354px;
+    margin-right: 30px;
+  }
+  .specialty__item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 .specialty__item::before {
   display: block;

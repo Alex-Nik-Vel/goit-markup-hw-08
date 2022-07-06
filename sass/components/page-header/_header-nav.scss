@@ -24,7 +24,7 @@
   }
   &.current::after,
   &:hover::after {
-    position: absolute;
+    // position: relative;
     display: block;
     bottom: 0;
     content: " ";
@@ -36,6 +36,7 @@
 }
 
 .nav-contacts {
+  // position: relative;
   margin-left: auto;
   fill: $text-color;
 }
@@ -47,6 +48,7 @@
   @extend %nav-contacts;
 }
 .nav-contacts__icon {
+  position: relative;
   padding: 0;
   margin-right: 10px;
   width: 16px;
