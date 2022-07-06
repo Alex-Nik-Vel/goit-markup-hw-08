@@ -7,15 +7,20 @@
 }
 
 .card__item {
-  margin: 0 15px;
   background-color: white;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tables) and (max-width: $desktop) {
     margin-right: 30px;
-    &:nth-child(2n) {
+    // &:nth-child(2n) {
+    //   margin-right: 0;
+    // }
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+    &:nth-child(4n) {
       margin-right: 0;
     }
   }
