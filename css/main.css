@@ -306,8 +306,10 @@ summary {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.section--do {
-  display: none;
+@media screen and (max-width: 1200px) {
+  .section--do {
+    display: none;
+  }
 }
 .section--team {
   background-color: #f5f4fa;
@@ -876,7 +878,20 @@ p {
   color: #ffffff;
 }
 
-.card {
+@media screen and (min-width: 768px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.card__item {
   margin: 0 15px;
   background-color: white;
   border-radius: 4px;
@@ -884,9 +899,13 @@ p {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
-
-.card__desk {
-  margin-top: 30px;
+@media screen and (min-width: 768px) {
+  .card__item {
+    margin-right: 30px;
+  }
+  .card__item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .card__specialization {
@@ -894,6 +913,10 @@ p {
   font-size: 14px;
   line-height: 1.19;
   text-align: center;
+}
+
+.card__desk {
+  margin-top: 30px;
 }
 
 .client {

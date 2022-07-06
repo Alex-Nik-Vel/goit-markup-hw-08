@@ -1,7 +1,8 @@
 .section--specialty {
 }
+
 .specialty {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tables) {
     display: flex;
     flex-wrap: wrap;
     // justify-content: center;
@@ -9,7 +10,7 @@
 }
 .specialty__item {
   margin-bottom: 30px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tables) {
     // width: 50%;
     width: 354px;
     margin-right: 30px;
