@@ -5,7 +5,6 @@
   padding-bottom: 60px;
   text-align: center;
 }
-
 .footer__addres {
   margin: 0;
   font-style: normal;
@@ -16,7 +15,6 @@
     margin-bottom: 8px;
   }
 }
-
 .footer__contacts {
   margin-top: 119px;
   color: rgba(255, 255, 255, 0.6);
@@ -64,29 +62,17 @@
     text-align: left;
     width: 231px;
   }
-
+  .for-tables {
+    margin: 0;
+  }
   .footer__contacts {
-    display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 9px;
-    margin-bottom: 0;
     &--phone {
       margin: 0;
     }
-
-    &:hover,
-    &:focus {
-      color: $booton-color;
-    }
   }
-
   .footer__subtitle {
-    margin: 0;
-    padding-bottom: 20px;
-    display: flex;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+    text-align: left;
   }
 }
