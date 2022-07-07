@@ -55,11 +55,20 @@
   display: flex;
   justify-content: space-between;
 }
-
+@media screen and (min-width: $tables) {
+  .footer__socials {
+    display: flex;
+    width: 206px;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 60px;
+    // padding-bottom: 160px;
+  }
+}
 .socials__icon--white {
   fill: #ffffff;
 }
-
 .socials__link-foot {
   background-color: rgba(255, 255, 255, 0.1);
 }
