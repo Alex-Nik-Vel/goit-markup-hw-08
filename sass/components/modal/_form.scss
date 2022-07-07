@@ -113,7 +113,7 @@
   display: block;
   position: absolute;
   top: 50%;
-  left: 2%;
+  left: 0%;
   width: 15px;
   height: 15px;
   transform: translateY(-55%);
@@ -130,16 +130,24 @@
     border: 2px solid $booton-color;
     fill: #ffffff;
   }
+  @media screen and (min-width: $desktop) {
+    left: 2%;
+  }
 }
 
 .check__text {
-  padding-left: 19px;
-  font-size: 14px;
-  line-height: 1.71;
+  padding-left: 25px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   text-align: center;
   &--agree {
     color: $booton-color;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 19px;
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
