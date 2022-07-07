@@ -31,10 +31,13 @@
     margin-right: auto;
     & {
       flex-basis: calc(33.333%);
-      &--footer,
       &--header {
         display: flex;
         align-items: center;
+      }
+      &--footer {
+        display: flex;
+        align-items: baseline;
       }
     }
   }

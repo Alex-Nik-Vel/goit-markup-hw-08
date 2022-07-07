@@ -1,6 +1,4 @@
 .footer {
-  // display: flex;
-
   background-color: $footer-header-backgraund;
   color: white;
   padding-top: 60px;
@@ -38,13 +36,9 @@
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 @media screen and (min-width: $tables) {
-  .footer {
-    // padding-left: 10%;
-    // text-align: center;
-  }
   .footer__addres {
-    // padding-right: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,5 +57,36 @@
   }
   .footer__contacts--phone {
     margin: 0;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .footer__add {
+    text-align: left;
+    width: 231px;
+  }
+
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 9px;
+    margin-bottom: 0;
+    &--phone {
+      margin: 0;
+    }
+
+    &:hover,
+    &:focus {
+      color: $booton-color;
+    }
+  }
+
+  .footer__subtitle {
+    margin: 0;
+    padding-bottom: 20px;
+    display: flex;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
   }
 }

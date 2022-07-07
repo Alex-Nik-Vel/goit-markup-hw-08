@@ -62,8 +62,19 @@
     flex-direction: column;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 60px;
-    // padding-bottom: 160px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .footer__socials-form {
+    display: flex;
+  }
+
+  .footer__socials {
+    margin-left: 70px;
+    display: flex;
+    width: 206px;
+    flex-direction: column;
   }
 }
 .socials__icon--white {
