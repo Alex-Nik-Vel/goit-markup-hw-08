@@ -3,10 +3,15 @@
   // padding-left: 15px;
   // padding-right: 15px;
 }
-
-%nav {
+.nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  min-height: 80px;
+}
+%nav {
+  // display: flex;
+  // justify-content: space-between;
   color: $title-color;
   font-weight: 500;
   font-size: 14px;
@@ -14,7 +19,19 @@
   text-decoration: none;
   transition: color 250ms $timing-fuction;
 }
-
+.button-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  // position: absolute;
+  // top: 22px;
+  // right: 23px;
+  height: 40px;
+  width: 40px;
+  // background-color: #fff;
+  border: none;
+}
 .nav-site__link {
   @extend %nav;
   &:hover,
@@ -26,7 +43,7 @@
   }
   &.current::after,
   &:hover::after {
-    // position: relative;
+    position: relative;
     display: block;
     bottom: 0;
     content: " ";
