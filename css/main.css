@@ -339,6 +339,12 @@ summary {
 .section--team {
   background-color: #f5f4fa;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 body {
   margin-left: auto;
@@ -1238,6 +1244,13 @@ p {
 }
 .btn-portfolio__items:nth-child(-n+3) {
   margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .btn-portfolio {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .button-portfolio {

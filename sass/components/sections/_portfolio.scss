@@ -7,13 +7,14 @@
       margin-bottom: 15px;
     }
   }
+  @media screen and (min-width: $tables) {
+    justify-content: center;
+  }
 }
-
 .button-portfolio {
   &:nth-child(3n + 1) {
     margin-right: 8px;
   }
-
   padding: 6px 22px;
   font-family: inherit;
   background-color: #f5f4fa;
