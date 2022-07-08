@@ -669,6 +669,20 @@ p {
   }
 }
 
+.nav-cocials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #2196f3;
+  font-size: 18px;
+  line-height: 1.22;
+}
+@media screen and (min-width: 768px) {
+  .nav-cocials {
+    display: none;
+  }
+}
+
 .button {
   cursor: pointer;
   font-weight: 700;
