@@ -5,6 +5,9 @@ body {
   background-color: white;
   color: $text-color;
   letter-spacing: 0.03em;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 .list-ul {
   list-style: none;

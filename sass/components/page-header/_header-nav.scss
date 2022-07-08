@@ -41,15 +41,16 @@
 .nav-menu {
   display: none;
   position: absolute;
+  padding: 40px;
   top: 100%;
   left: 0;
-  width: 480px;
+  width: 100%;
   height: 796px;
+  background-color: #fff;
   // text-align: center;
   &.is-open {
     display: block;
   }
-  background-color: bisque;
 }
 .nav-site__link {
   @extend %nav;
