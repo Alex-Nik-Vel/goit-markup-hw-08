@@ -458,6 +458,7 @@ p {
 
 .header {
   outline: solid #ececec 1px;
+  position: relative;
 }
 
 .nav {
@@ -508,6 +509,19 @@ p {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.nav-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 480px;
+  height: 796px;
+  background-color: bisque;
+}
+.nav-menu.is-open {
+  display: block;
 }
 
 .nav-site__link:hover, .nav-site__link:focus {

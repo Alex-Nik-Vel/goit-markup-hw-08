@@ -1,5 +1,6 @@
 .header {
   outline: solid #ececec 1px;
+  position: relative;
   // padding-left: 15px;
   // padding-right: 15px;
 }
@@ -36,6 +37,19 @@
 }
 .menu-button.is-open .icon-menu {
   display: none;
+}
+.nav-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 480px;
+  height: 796px;
+  // text-align: center;
+  &.is-open {
+    display: block;
+  }
+  background-color: bisque;
 }
 .nav-site__link {
   @extend %nav;
