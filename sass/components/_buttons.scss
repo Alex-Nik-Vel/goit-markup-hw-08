@@ -16,6 +16,10 @@
   @media screen and (min-width: $tables) {
     display: none;
   }
+  .icon-cross,
+  .icon-menu {
+    fill: currentColor;
+  }
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -23,7 +27,12 @@
   height: 40px;
   width: 40px;
   border: none;
+  &:hover,
+  &:focus {
+    color: $booton-color;
+  }
 }
+
 .menu-button .icon-cross {
   display: none;
 }

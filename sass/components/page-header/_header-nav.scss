@@ -37,12 +37,15 @@
 
 %nav {
   display: flex;
+  color: $title-color;
   font-size: 40px;
   line-height: 1.18;
-  color: $title-color;
   font-weight: 500;
   text-decoration: none;
   transition: color 250ms $timing-fuction;
+  @media screen and (max-width: calc(($tables) - 1px)) {
+    margin-bottom: 32px;
+  }
   @media screen and (min-width: $tables) {
     font-size: 12px;
     line-height: 1.17;
@@ -71,7 +74,6 @@
   @media screen and (min-width: $tables) {
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     align-items: center;
   }
 }
@@ -101,6 +103,10 @@
 }
 
 .nav-contacts {
+  @media screen and (max-width: calc(($tables) - 1px)) {
+    margin-top: 302px;
+  }
+
   @media screen and (min-width: $tables) {
     margin-left: 84px;
   }
@@ -115,16 +121,26 @@
   display: flex;
   color: $text-color;
   transition: color 250ms $timing-fuction;
+  @media screen and (max-width: calc(($tables) - 1px)) {
+    font-size: 22px;
+    line-height: 1.17;
+  }
   @media screen and (min-width: $tables) {
     &:not(:last-child) {
       margin-right: 50px;
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 0;
     }
   }
 
   @extend %nav-contacts;
 }
 .nav-contacts__icon {
-  @media screen and (max-width: calc(($desktop) - 1px)) {
+  @media screen and (max-width: calc(($tables) - 1px)) {
     display: none;
   }
   position: relative;
@@ -140,4 +156,9 @@
 %nav-contacts:focus {
   color: $booton-color;
   fill: $booton-color;
+  @media screen and (max-width: calc(($desktop) - 1px)) {
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
 }
