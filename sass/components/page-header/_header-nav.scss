@@ -10,7 +10,7 @@
   min-height: 80px;
 }
 %nav {
-  // display: flex;
+  display: flex;
   // justify-content: space-between;
   color: $title-color;
   font-weight: 500;
@@ -19,18 +19,23 @@
   text-decoration: none;
   transition: color 250ms $timing-fuction;
 }
-.button-menu {
+.menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
   background-color: transparent;
-  // position: absolute;
-  // top: 22px;
-  // right: 23px;
   height: 40px;
   width: 40px;
-  // background-color: #fff;
   border: none;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 .nav-site__link {
   @extend %nav;
