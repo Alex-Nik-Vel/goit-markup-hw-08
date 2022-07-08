@@ -8,48 +8,71 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 80px;
+  @media screen and (min-width: $tables) {
+    &-site {
+      display: flex;
+      margin-left: 88px;
+    }
+
+    &-site__item {
+      position: relative;
+      width: 100%;
+      height: 48px;
+      margin-top: 32px;
+      & + & {
+        margin-left: 30px;
+      }
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    &-site {
+      display: flex;
+      margin-left: 93px;
+    }
+    & + & {
+      margin-left: 50px;
+    }
+  }
 }
+
 %nav {
   display: flex;
-  // justify-content: space-between;
+  font-size: 40px;
+  line-height: 1.18;
   color: $title-color;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   text-decoration: none;
   transition: color 250ms $timing-fuction;
+  @media screen and (min-width: $tables) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: $tables) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  height: 40px;
-  width: 40px;
-  border: none;
-}
-.menu-button .icon-cross {
-  display: none;
-}
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-.menu-button.is-open .icon-menu {
-  display: none;
-}
+
 .nav-menu {
-  display: none;
-  position: absolute;
-  padding: 40px;
-  top: 100%;
-  left: 0;
   width: 100%;
-  height: 796px;
+  height: 100%;
   background-color: #fff;
-  // text-align: center;
-  &.is-open {
-    display: block;
+  @media screen and (max-width: 767px) {
+    display: none;
+    height: 796px;
+    position: absolute;
+    padding: 48px 0 48px 40px;
+    top: 100%;
+    left: 0;
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: $tables) {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    align-items: center;
   }
 }
 .nav-site__link {
@@ -63,6 +86,9 @@
   }
   &.current::after,
   &:hover::after {
+    @media screen and (max-width: calc(($desktop) - 1px)) {
+      display: none;
+    }
     position: relative;
     display: block;
     bottom: 0;
@@ -75,7 +101,12 @@
 }
 
 .nav-contacts {
-  // position: relative;
+  @media screen and (min-width: $tables) {
+    margin-left: 84px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
   margin-left: auto;
   fill: $text-color;
 }
@@ -84,9 +115,18 @@
   display: flex;
   color: $text-color;
   transition: color 250ms $timing-fuction;
+  @media screen and (min-width: $tables) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
   @extend %nav-contacts;
 }
 .nav-contacts__icon {
+  @media screen and (max-width: calc(($desktop) - 1px)) {
+    display: none;
+  }
   position: relative;
   padding: 0;
   margin-right: 10px;

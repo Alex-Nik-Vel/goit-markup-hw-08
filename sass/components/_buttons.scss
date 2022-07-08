@@ -11,7 +11,30 @@
   border: 0;
   outline: none;
 }
+// BUTTON MENU
+.menu-button {
+  @media screen and (min-width: $tables) {
+    display: none;
+  }
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
 
+// BUTTON HERO
 .button-hero {
   height: 50px;
   min-width: 200px;
