@@ -13,6 +13,8 @@
 }
 // BUTTON MENU
 .menu-button {
+  position: static;
+  z-index: 4;
   @media screen and (min-width: $tables) {
     display: none;
   }
