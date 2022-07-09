@@ -882,6 +882,11 @@ p {
   }
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .box {
+    background-image: url(../img/hero/hero-fon-2x.jpg);
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -1241,15 +1246,17 @@ p {
 }
 
 .card__item {
+  margin-bottom: 30px;
+  max-width: 450px;
   background-color: white;
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .card__item {
     margin-right: 30px;
+    max-width: 354px;
   }
   .card__item:nth-child(2n) {
     margin-right: 0;
@@ -1258,6 +1265,7 @@ p {
 @media screen and (min-width: 1200px) {
   .card__item {
     margin-right: 30px;
+    max-width: 270px;
   }
   .card__item:nth-child(4n) {
     margin-right: 0;
@@ -1273,6 +1281,14 @@ p {
 
 .card__desk {
   margin-top: 30px;
+}
+
+.team-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .client {

@@ -5,7 +5,6 @@
   @media screen and (min-width: $tables) {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
   }
 }
 .specialty__item {
@@ -35,10 +34,6 @@
     background-position: center;
     background-size: 70px 70px;
   }
-
-  // & + & {
-  //   margin-left: 30px;
-  // }
 }
 
 $iconsvg: "Groupantena", "clock", "diagram", "astronaut";

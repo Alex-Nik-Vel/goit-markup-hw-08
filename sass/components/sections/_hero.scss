@@ -20,6 +20,13 @@
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    // min-height: 600px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url(../img/hero/hero-fon-2x.jpg);
   }
 }

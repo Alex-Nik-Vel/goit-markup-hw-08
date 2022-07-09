@@ -7,19 +7,23 @@
 }
 
 .card__item {
+  margin-bottom: 30px;
+  max-width: 450px;
   background-color: white;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
+
   @media screen and (min-width: $tables) and (max-width: calc(($desktop) - 1px)) {
     margin-right: 30px;
+    max-width: 354px;
     &:nth-child(2n) {
       margin-right: 0;
     }
   }
   @media screen and (min-width: $desktop) {
     margin-right: 30px;
+    max-width: 270px;
     &:nth-child(4n) {
       margin-right: 0;
     }
@@ -33,4 +37,10 @@
 }
 .card__desk {
   margin-top: 30px;
+}
+.team-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
