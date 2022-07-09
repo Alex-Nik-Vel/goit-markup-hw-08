@@ -544,7 +544,7 @@ p {
     display: none;
     height: 796px;
     position: absolute;
-    padding: 48px 0 48px 40px;
+    padding: 0 40px 48px 40px;
     top: 100%;
     left: 0;
   }
@@ -565,6 +565,11 @@ p {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.nav-site {
+  margin: 0;
+  padding: 0;
 }
 
 .nav-site__link:hover, .nav-site__link:focus {
@@ -683,8 +688,8 @@ p {
 }
 
 .nav-socials__item {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .nav-socials__item:nth-child(1) {
   padding-left: 0;
