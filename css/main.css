@@ -669,18 +669,22 @@ p {
   }
 }
 
-.nav-cocials {
+.nav-socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #2196f3;
   font-size: 18px;
   line-height: 1.22;
 }
 @media screen and (min-width: 768px) {
-  .nav-cocials {
+  .nav-socials {
     display: none;
   }
+}
+
+.nav-socials__link {
+  margin-left: 10px;
+  color: #2196f3;
 }
 
 .button {
@@ -719,15 +723,15 @@ p {
   color: #2196f3;
 }
 
-.menu-button .icon-cross {
+.menu-button .icon-menu {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-button.is-open .icon-menu {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button.is-open .icon-cross {
   display: none;
 }
 

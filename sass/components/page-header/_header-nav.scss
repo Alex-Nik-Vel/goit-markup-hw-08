@@ -162,12 +162,15 @@
     letter-spacing: 0.02em;
   }
 }
-.nav-cocials {
+.nav-socials {
   display: flex;
-  color: $booton-color;
   font-size: 18px;
   line-height: 1.22;
   @media screen and (min-width: $tables) {
     display: none;
   }
+}
+.nav-socials__link {
+  margin-left: 10px;
+  color: $booton-color;
 }

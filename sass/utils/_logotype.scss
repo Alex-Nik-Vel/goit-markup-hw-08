@@ -1,7 +1,4 @@
 .logo {
-  // &.menu-button .icon-cross {
-  //   display: none;
-  // }
   display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -10,6 +7,10 @@
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  // .nav > .menu-button.is-open & {
+  //   display: none;
+  //   visibility: hidden;
+  // }
 }
 .logo--web {
   color: $booton-color;
