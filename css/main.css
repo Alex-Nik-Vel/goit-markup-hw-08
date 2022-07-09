@@ -731,6 +731,7 @@ p {
 
 .menu-button {
   position: static;
+  right: 25px;
   z-index: 4;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1643,6 +1644,11 @@ p {
 .portfolio__specific {
   padding: 20px 24px;
   outline: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__specific {
+    height: 136px;
+  }
 }
 
 .portfolio__popup {
