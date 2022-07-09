@@ -684,6 +684,7 @@ p {
 
 .nav-socials__link {
   margin-left: 10px;
+  text-decoration: none;
   color: #2196f3;
 }
 
