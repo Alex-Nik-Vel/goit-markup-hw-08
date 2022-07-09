@@ -682,18 +682,20 @@ p {
   }
 }
 
+.nav-socials__item {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.nav-socials__item:nth-child(1) {
+  padding-left: 0;
+}
 .nav-socials__item:not(:last-child) {
   border-right: #757575 1px solid;
 }
 
 .nav-socials__link {
-  margin-left: 5px;
-  margin-right: 5px;
   text-decoration: none;
   color: #2196f3;
-}
-.nav-socials__link:first-child {
-  margin-left: 0;
 }
 
 .button {
