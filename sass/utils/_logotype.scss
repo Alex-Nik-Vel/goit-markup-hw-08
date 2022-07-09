@@ -7,10 +7,6 @@
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-  // .nav > .menu-button.is-open & {
-  //   display: none;
-  //   visibility: hidden;
-  // }
 }
 .logo--web {
   color: $booton-color;
@@ -20,4 +16,7 @@
   color: white;
   padding: 0;
   margin: 0;
+}
+.logo.menu-button.is-open {
+  visibility: hidden;
 }

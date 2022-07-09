@@ -1,13 +1,15 @@
 .header {
   outline: solid #ececec 1px;
   position: relative;
-  // padding-left: 15px;
-  // padding-right: 15px;
 }
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  &-site {
+    margin: 0;
+    padding: 0;
+  }
   @media screen and (min-width: $tables) {
     &-site {
       display: flex;
@@ -34,7 +36,6 @@
     }
   }
 }
-
 %nav {
   display: flex;
   color: $title-color;
@@ -77,10 +78,7 @@
     align-items: center;
   }
 }
-.nav-site {
-  margin: 0;
-  padding: 0;
-}
+
 .nav-site__link {
   @extend %nav;
   &:hover,

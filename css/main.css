@@ -383,6 +383,10 @@ body.modal-open {
   margin: 0;
 }
 
+.logo.menu-button.is-open {
+  visibility: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -475,6 +479,10 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.nav-site {
+  margin: 0;
+  padding: 0;
+}
 @media screen and (min-width: 768px) {
   .nav-site {
     display: -webkit-box;
@@ -565,11 +573,6 @@ p {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-.nav-site {
-  margin: 0;
-  padding: 0;
 }
 
 .nav-site__link:hover, .nav-site__link:focus {
