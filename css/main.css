@@ -682,8 +682,13 @@ p {
   }
 }
 
+.nav-socials__item:not(:last-child) {
+  border-right: #757575 1px solid;
+}
+
 .nav-socials__link {
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   text-decoration: none;
   color: #2196f3;
 }

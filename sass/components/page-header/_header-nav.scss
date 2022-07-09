@@ -170,8 +170,14 @@
     display: none;
   }
 }
+.nav-socials__item:not(:last-child) {
+  // border: ;
+  border-right: $text-color 1px solid;
+}
 .nav-socials__link {
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   text-decoration: none;
   color: $booton-color;
+  // border-right: $text-color 1px solid;
 }
