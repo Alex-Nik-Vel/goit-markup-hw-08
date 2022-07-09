@@ -171,7 +171,6 @@
   }
 }
 .nav-socials__item:not(:last-child) {
-  // border: ;
   border-right: $text-color 1px solid;
 }
 .nav-socials__link {
@@ -179,5 +178,7 @@
   margin-right: 5px;
   text-decoration: none;
   color: $booton-color;
-  // border-right: $text-color 1px solid;
+  &:first-child {
+    margin-left: 0;
+  }
 }

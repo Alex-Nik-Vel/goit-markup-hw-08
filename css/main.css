@@ -692,6 +692,9 @@ p {
   text-decoration: none;
   color: #2196f3;
 }
+.nav-socials__link:first-child {
+  margin-left: 0;
+}
 
 .button {
   cursor: pointer;
