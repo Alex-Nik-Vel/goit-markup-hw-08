@@ -9,11 +9,17 @@
 }
 .specialty__item {
   margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: $tables) and (max-width: $desktop) {
     margin-right: 30px;
     width: 354px;
     &:nth-child(2n) {
       margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
   }
   @media screen and (min-width: $desktop) {
@@ -22,6 +28,7 @@
     &:nth-child(4n) {
       margin-right: 0;
     }
+    margin-bottom: 0;
   }
   &::before {
     display: block;

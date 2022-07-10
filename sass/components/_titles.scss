@@ -52,11 +52,17 @@ p {
   &--do,
   &--teams,
   &--client {
-    font-size: 36px;
-    line-height: 1.17;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17px;
     text-align: center;
     margin-top: 0;
     margin-bottom: 30px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.17;
+    }
   }
 
   &--card {
