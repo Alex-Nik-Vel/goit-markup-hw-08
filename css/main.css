@@ -1381,6 +1381,9 @@ p {
     margin-right: 0;
     margin-left: 0;
   }
+  .client__item:first-child {
+    margin-top: 0;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .client__item {
@@ -1388,6 +1391,9 @@ p {
   }
   .client__item:nth-child(2n) {
     margin-right: 0;
+  }
+  .client__item:nth-child(-n+2) {
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
