@@ -526,10 +526,6 @@ p {
   }
 }
 
-.nav.menu-button.is-open .logo {
-  visibility: hidden;
-}
-
 .nav-contacts__mailphone, .nav-site__link {
   display: -webkit-box;
   display: -ms-flexbox;
